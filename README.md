@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://gitguide.vercel.app">
     <img
-      src="/public/image.png"
+      src="/public/README.png"
       alt="@angelurrutdev/gitguide"
       height="60"
     />
