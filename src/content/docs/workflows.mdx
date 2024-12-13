@@ -1,0 +1,33 @@
+---
+title: "Workflows"
+description: "This section outlines common Git and GitHub workflows for effective collaboration and version control."
+category: "GitHub"
+---
+
+### Git Basics
+
+- **Staging and Committing:** Use `git add` to stage changes and `git commit` to save them with a descriptive message. This creates a snapshot of your project at a specific point in time.
+- **Branching:** Create branches for new features, bug fixes, or experiments to isolate changes from the main codebase. Use `git branch <branch_name>` to create a new branch and `git checkout <branch_name>` to switch to it.
+- **Merging:** Integrate changes from one branch into another using `git merge`. Resolve any merge conflicts that arise.
+- **Rebasing:** Rewrites the project history by applying commits from one branch onto another. Use with caution, especially on shared branches. `git rebase <branch_name>`.
+
+### Common GitHub Workflows
+
+- **GitHub Flow:** A simple branching model where all features are developed in separate branches and merged into `main` after review.
+- **Gitflow:** A more structured workflow with dedicated branches for releases, hotfixes, and features.
+- **Forking Workflow:** Create a copy (fork) of a repository to make changes, then submit a pull request to the original repository. Ideal for contributing to open-source projects.
+
+### Example Workflow (GitHub Flow)
+
+1. **Create a branch:** `git checkout -b feature/new-feature`
+2. **Make changes and commit:** `git add .`, `git commit -m "Add new feature"`
+3. **Push to GitHub:** `git push origin feature/new-feature`
+4. **Create a Pull Request:** On GitHub, create a pull request to merge your branch into `main`.
+5. **Review and Merge:** Reviewers provide feedback, and the pull request is merged into `main` once approved.
+
+### Best Practices
+
+- **Descriptive commit messages:** Clearly explain the changes made in each commit.
+- **Regular commits:** Commit frequently to preserve a detailed project history.
+- **Code reviews:** Have others review your code before merging changes to the main branch.
+- **Use a `.gitignore` file:** Exclude unnecessary files (e.g., build artifacts, temporary files) from version control.

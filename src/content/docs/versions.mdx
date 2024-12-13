@@ -1,0 +1,71 @@
+---
+title: "Control Versions"
+description: "Version control is a system that records changes to files over time, allowing you to manage the evolution of projects efficiently."
+category: "Git"
+---
+
+1. Verify the status actually in your computer:
+
+   ```bash
+   git status
+   ```
+
+2. Compares the changes between different versions of a file and the staging area:
+
+   ```bash
+   git diff {file}
+   ```
+
+- Or compare the working directory with the last commit.
+
+  ```bash
+  git diff HEAD
+  ```
+
+3. Displays a log of all commits made to the repository.
+
+   ```bash
+   git log
+   ```
+
+- Displays a more accurate version of the history.
+
+  ```bash
+  git log --oneline
+  ```
+
+- It displays the history as a graph, showing branches and merges.
+
+  ```bash
+  git log --graph
+  ```
+
+4. Displays the changes made to a specific commit.
+
+   ```bash
+   git show {commit}
+   ```
+
+5. Shows who made each change to a specific line in a file.
+
+   ```bash
+   git blame {file}
+   ```
+
+6. Helps to find the exact confirmation where an error was entered.
+
+   ```bash
+   git bisect
+   ```
+
+7. Change the active branch to the specified commit and update your working directory with the files of that version. ⚠Be careful!⚠ This command overwrites uncommitted changes.
+
+   ```bash
+   git checkout {hash}
+   ```
+
+8. Displays a log of all commits made to the repository, including commits that are no longer referenced by any branch. This can be useful for recovering lost commits.
+
+   ```bash
+   git reflog
+   ```

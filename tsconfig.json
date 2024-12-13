@@ -1,0 +1,20 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/icons": ["src/icons/icons.tsx"],
+      "@/icons.lib": ["src/icons/icons-lib.tsx"],
+      "@/docs.config": ["./docs.config.ts"],
+      "@/globals": ["./globals.ts"],
+      "@/ui": ["./src/ui/*"],
+      "@/store": ["./src/lib/store/index.ts"],
+      "@/utils": ["./src/utils/index.ts"],
+      "@/utils-lib": ["./src/lib/index.ts"],
+      "@/styles": ["./src/styles/global.css"],
+    }
+  },
+  "exclude": ["dist"]
+}

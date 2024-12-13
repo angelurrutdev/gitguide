@@ -1,0 +1,85 @@
+---
+title: "Create a local repositry"
+description: "How to create .git in local reposity and commit your files"
+category: "Git"
+---
+
+1. Create a folder .git:
+
+   ```bash
+   git init
+   ```
+
+2. Include all files:
+
+   ```bash
+   git add .
+   ```
+
+- or include specific file
+
+  ```bash
+  git add ./{your_file}
+  ```
+
+3. Verify the status
+
+   ```bash
+   git status
+   ```
+
+4. Commit files
+
+   ```bash
+   git commit -m "my first commit"
+   ```
+
+5. Redirect to Branch Main
+
+   ```bash
+   git branch -M main
+   ```
+
+6. Link your local repository to your remote GitHub repository [**You can create and find your Git remote here:**](https://github.com/new)
+
+   ```bash
+   git remote add origin git@github.com:{usergithub}/{project}.git
+   ```
+
+7. Upload your files to branch main
+
+   ```bash
+   git push -u origin main
+   ```
+
+- or upload the files to the branch you want
+
+  ```bash
+  git push -u origin {branch}
+  ```
+
+8. Delete the commit while keeping the code.
+
+   ```bash
+   git reset --soft + "commit"
+   ```
+
+9. Remove the staging-area while keeping the code.
+
+   ```bash
+   git reset --mixt + "commit"
+   ```
+
+10. Remove a Commit
+
+    ```bash
+    git reset --hard
+    ```
+
+11. Save what was deleted with the last version of the commit
+
+    ```bash
+    git reset --hard + "commit"
+    ```
+
+✨ Ready.
