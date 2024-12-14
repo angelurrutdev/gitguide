@@ -1,26 +1,32 @@
 <div align="center">
-  <a href="https://gitguide.vercel.app">
-    <img
-      src="/public/README.jpg"
-      alt="@angelurrutdev/gitguide"
-      height="60"
-    />
-  </a>
-  <p/>
-  <p>
-    <b>
-Complete and easy guide to handle your local and remote repositories
-    </b>
-  </p>
-
-<a href="#-contributing">Contribute</a>
-
+<a href="https://gitguide.vercel.app">
+<img src="/public/README.png">
+</a>
+<p></p>
 </div>
+
+<div align="center">
+    <a href="https://gitguide.vercel.app" target="_blank">
+        Discover
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="#-getting-started">
+        Submit Fix
+    </a>
+      <span>&nbsp;✦&nbsp;</span>
+    <a href="#%EF%B8%8F-contributing">
+        Contributing
+    </a>
+</div>
+
+</p>
 
 <div align="center">
 
 ![GitHub stars](https://img.shields.io/github/stars/angelurrutdev/gitguide)
 ![GitHub issues](https://img.shields.io/github/issues/angelurrutdev/gitguide)
+![GitHub forks](https://img.shields.io/github/forks/angelurrutdev/gitguide)
+![GitHub PRs](https://img.shields.io/github/issues-pr/angelurrutdev/gitguide)
 
 </div>
 
@@ -34,9 +40,14 @@ Complete and easy guide to handle your local and remote repositories
 - [**Lucide Icons**](https://lucide.dev/) - A clean and friendly icons libraries.
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 
-## 🚀 Contributing
+## 🚀 Getting Started
 
-1. [Fork](https://github.com/angelurrutdev/GitGuide/fork) this repository and clone it locally:
+You will need:
+
+- [Node.js 18+ (recommended 20 LTS)](https://nodejs.org/en/).
+- [Git](https://git-scm.com/).
+
+1. [Fork](https://github.com/angelurrutdev/gitguide/fork) this repository and clone it locally:
 
 ```bash
 git clone git@github.com:your_username/gitguide.git
@@ -50,13 +61,17 @@ npm install -g pnpm
 
 # and install dependencies:
 pnpm install
+
+
+# Open a Web Project:
+pnpm dev
 ```
 
-- 🧑‍🚀 Open [`http://localhost:4321`](http://localhost:4321) to view the **Astro** documentation website.
+3. 🧑‍🚀 Open [`http://localhost:4321`](http://localhost:4321) to view the website.
 
-and create a pull request with your features or fixes 🚀✨.
+and create a pull request with your features or fixes 🚀.
 
-## Contributors
+## ✌️ Contributing
 
 <a href="https://github.com/angelurrutdev/gitguide/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=angelurrutdev/gitguide" />
