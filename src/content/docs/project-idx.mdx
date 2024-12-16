@@ -1,0 +1,78 @@
+---
+title: "Puh Code to IDX"
+description: "How to create .git in local reposity and push your files in Project IDX"
+category: "Project IDX"
+---
+
+## These are the steps you need to follow to upload your project created in Project IDX to a GitHub repository, follow te next steps:
+
+1. Create a new repository on GitHub and make a note of the repository name you choose.
+
+2. If you want to bypass the steps up to Step 5 [Click Here](https://github.com/settings/tokens?type=beta)
+
+3. Go to your profile icon located in the upper right corner and click on the 'Settings' button
+
+4. Scroll down to the bottom of the page and select 'Developer Settings'
+
+5. Click on the 'Personal Access Token' button to expand its options, then choose 'Fine-grained Tokens'
+
+6. In the top right, you'll find a button labeled 'Generate Token' Click on that.
+
+7. "In the Token Name field, enter the name of the repository if you choose en the Step 1. to upload files in
+
+`(OPTIONAL) If you frequently work on the repository, you may adjust the expiration date.`
+
+8. By scrolling down further, you'll reveal three buttons that can be selected:
+
+> `Public Repositories (read-only)`
+
+> `All repositories`
+
+> `Only select repositories`
+
+`From the given options, select the one that aligns with your requirements. If you need access to a particular repository, choose the third option. For broader access to all repositories, opt for the second option.`
+
+9. In the Permissions section, select all checkboxes and change them to Read and Write. If this option doesn't exist, choose Read-Only
+
+10. Scroll to the bottom and click the green 'Generate Token' button. This will redirect you to a new page where you'll receive a token.
+    `IMPORTANT: Keep this token confidential as it provides complete access to the option you chose in step 8.`
+
+11.You'll need to copy the Token given to you by GitHub. Next, navigate to Project IDX and perform these commands in the terminal
+
+- Init a GitHub in your files
+
+  ```bash
+  git init
+  ```
+
+- Add all files to the staging area
+
+  ```bash
+  git add .
+  ```
+
+- Commit the changes
+
+  ```bash
+  git commit -m "{name_commit}"
+  ```
+
+- Change to branch main
+
+  ```bash
+  git branch -M main
+  ```
+
+- Link your local repository to your remote GitHub repository
+
+  ```bash
+  git remote add origin https://{your_fine_token}@github.com/{user}/{name_repo}
+  ```
+
+- Upload your files to branch main
+
+  ```bash
+  git push -u origin main
+  ```
+
+> `If you have a error probably you're not linked your account GitHub in your IDX, follow the steps in` [Getting Started](/)

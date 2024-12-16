@@ -79,6 +79,17 @@ export const SidebarRoutes: iDocsRoutes[] = [
 ],
   },
 
+  {
+    category: 'Project IDX',
+    routes: [
+      {
+        title: 'To GitHub in IDX',
+        path: '/project-idx',
+        icon: PullRequest,
+      },
+      ],
+  },
+
 
   {
     category: 'Help',
